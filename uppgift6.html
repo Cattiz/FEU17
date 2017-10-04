@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <meta charset="utf-8">
+  <title>Övning 7.6</title>
+     <style>
+         
+         #wrapper {
+           margin: auto;
+           margin-top: 10px;
+           width: 607px;
+           border: 1px solid gray;
+           height: 221px;
+           background-color: #FCE38A;
+           text-align: center;
+         }
+         #idrottare{
+           background-color:#F38181;
+           border: 2px dashed gray;
+	         position: absolute;	
+	         height: 40px; 
+	      	 width: 150px;
+	      	 margin-left: 0px;
+	         margin-top: 0px;
+         }
+     
+         #resultat{
+           background-color:#F38181;
+           border: 2px dashed gray;
+		       position: absolute;	
+		       height: 40px; 
+	         width: 150px;
+		       margin-left: 152px;
+		       margin-top: 0px;
+         }
+     
+         #placering{
+            background-color:#F38181;
+            border: 2px dashed gray;
+		        position: absolute;	
+		        height: 40px; 
+		        width: 150px;
+		        margin-left: 304px;
+		        margin-top:0px;
+         }
+     
+        #land{
+            background-color:#F38181;
+            border: 2px dashed gray;
+		        position: absolute;	
+		        height: 40px; 
+		        width: 150px;
+		        margin-left: 456px;
+		        margin-top: 0px;
+         }
+     
+         
+         #michelle{
+            border: 2px dotted gray;
+		        position: absolute;	
+		        height: 40px; 
+		        width: 150px;
+		        margin-left: 0px;
+		        margin-top: 45px;
+         }
+         
+        #michelle_resultat{
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 152px;
+		       margin-top: 45px;
+         }
+     
+         #michelle_placering{
+           background-color: #C6A907;
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 304px;
+		       margin-top: 45px;
+         }
+     
+         #michelle_land{
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 456px;
+		       margin-top: 45px;
+         }
+     
+         #valerie{
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 0px;
+		       margin-top: 90px;
+         }
+         
+         #valerie_resultat{
+           border: 2px dotted gray;
+	         position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 152px;
+		       margin-top: 90px;
+         }
+     
+         #valerie_placering{
+           background-color: #C4C1C1;
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 304px;
+		       margin-top: 90px;
+         }
+     
+         #valerie_land{
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 456px;
+		       margin-top: 90px;
+         } 
+         
+         #anita{
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 0px;
+		       margin-top: 135px;
+         }
+         
+         #anita_resultat{
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 152px;
+		       margin-top: 135px;
+         }
+     
+         #anita_placering{
+           background-color: #D7810F;
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 304px;
+		       margin-top: 135px;
+         }
+     
+          #anita_land{
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 456px;
+		       margin-top: 135px;
+         }       
+         
+         #gong{
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 0px;
+		       margin-top: 180px;
+         }
+         
+         #gong_resultat{
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 152px;
+		       margin-top:  180px;
+         }
+     
+         #gong_placering{
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 304px;
+		       margin-top: 180px;
+         }
+     
+         #gong_land{
+           border: 2px dotted gray;
+		       position: absolute;	
+		       height: 40px; 
+		       width: 150px;
+		       margin-left: 456px;
+		       margin-top: 180px;
+         } 
+     </style>
+ </head>
+<body>
+   <h3 style="text-align: center; margin-top: 140px">Kula, damer, OS 2016</h3>
+  
+<div id="wrapper">
+    <div id="idrottare">
+        <h3>Idrottare</h3>
+    </div>
+    
+    <div id="resultat">
+        <h3>Resultat</h3>
+    </div>
+    
+    <div id="placering">
+        <h3>Placering</h3>
+    </div>
+    
+    <div id="land">
+        <h3>Land</h3>
+    </div>
+    
+
+     <div id="michelle">
+        <p>Michelle Carter</p>
+     </div>
+    
+     <div id="michelle_resultat">
+        <p>20,63m</p>
+     </div>
+        
+     <div id="michelle_placering">
+        <p>1</p>
+     </div>
+    
+     <div id="michelle_land">
+        <p>USA</p>
+     </div>
+    
+    
+    <div id="valerie">
+        <p>Valerie Adams</p>
+    </div>
+    
+    <div id="valerie_resultat">
+        <p>20,42m</p>
+    </div>
+        
+    <div id="valerie_placering">
+        <p>2</p>
+    </div>
+    
+    <div id="valerie_land">
+        <p>Nya Zeeland</p>
+    </div>
+    
+    
+    <div id="anita">
+        <p>Anita Márton</p>
+    </div>
+    
+    <div id="anita_resultat">
+        <p>19,87m</p>
+    </div>
+        
+    <div id="anita_placering">
+        <p>3</p>
+    </div>
+    
+    <div id="anita_land">
+        <p>Ungern</p>
+    </div>
+    
+    
+    <div id="gong">
+        <p>Gong Lijiao</p>
+    </div>
+    
+    <div id="gong_resultat">
+        <p>19,39m</p>
+    </div>
+        
+    <div id="gong_placering">
+        <p>4</p>
+    </div>
+    
+    <div id="gong_land">
+        <p>Kina</p>
+    </div>
+  
+  </div>        
+  </body>
