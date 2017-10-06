@@ -10,6 +10,12 @@
       href="https://cattiz.github.io/html-demo/favicon.png">
     <style>
     
+		html, body{
+			margin:0;
+			padding:0;
+			height: 100%;
+			}
+	
         body{
             background-color: black;
             background-image: url(https://cattiz.github.io/html-demo/background1.png);
@@ -17,49 +23,59 @@
             background-repeat: no-repeat;  
         }
         
-        h1{
+        h3{
             font-family: Questrial;
-                   color: darkgoldenrod;
-                   font-size: 90px;
-                   position: fixed;
-                   margin-top:140px;
-                   margin-left: 150px;
+            color: darkgoldenrod;
+            font-size: 110px;
+            position: fixed;
+            margin-top:130px;
+            margin-left: 150px;
         }
     
-        ul {
+                      
+        li {
             display: block;
-            margin-top: 40px;
+            margin-top: 0;
             margin-left: 115px;
             font-family: Questrial;
-            font-size: 16px;
+            font-size: 1.5em;
         }
-
+        
+        
         a:visited{
             color: floralwhite;
         }
         a:hover{
             color: darkgoldenrod;
+                    
         }
         a{
             text-decoration: none;
         }
         
-        ol li{
-            
-            position: fixed;
-            margin-top: 240px;
-            margin-left: 400px;
-            font-size: 16px;
-            font-family: Questrial;
-	    list-style-type: none;
+        ol#menu li{
+	   display: inline;
+	   font-size: 20px;
+           font-family: Questrial;
+           list-style-type: none;
+	   margin: 0;
         }
         
+	#footer {
+	   position:fixed;
+	   bottom: 0;
+	   width: 100%;
+	   height: 80px;
+	   background-color: black;
+	   display:inline;
+	}
     </style>
+	
 </head>
 <body>
     
     <div>
-    <h1>exercises</h1>
+    <h3>exercises</h3>
     </div>
     
     <div style="position: fixed;">
@@ -70,16 +86,22 @@
         </ul>
     </div>
    
-  <div>
-    <ol>
-      <li><a href="https://cattiz.github.io/html-demo/uppgift1.html" target="_blank">exercise 1</a></li><br>
-      <li><a href="https://cattiz.github.io/html-demo/uppgift2.html" target="_blank">exercise 2</a></li><br>
-      <li><a href="https://cattiz.github.io/html-demo/uppgift3.html" target="_blank">exercise 3</a></li><br>
-      <li><a href="https://cattiz.github.io/html-demo/uppgift4.html" target="_blank">exercise 4</a></li><br>
-      <li><a href="https://cattiz.github.io/html-demo/uppgift5.html" target="_blank">exercise 5</a></li><br>
-      <li><a href="https://cattiz.github.io/html-demo/uppgift6.html" target="_blank">exercise 6</a></li>
+	<div style="position: fixed; margin-top: 240px">
+    <ol id="menu">
+      <li style="margin-left:115px"><a href="https://cattiz.github.io/html-demo/uppgift1.html" target="_blank">exercise 1 -</a></li>
+      <li><a href="https://cattiz.github.io/html-demo/uppgift2.html" target="_blank">exercise 2 -</a></li>
+      <li><a href="https://cattiz.github.io/html-demo/uppgift3.html" target="_blank"> exercise 3 -</a></li>
+      <li><a href="https://cattiz.github.io/html-demo/uppgift4.html" target="_blank"> exercise 4 -</a></li>
+      <li><a href="https://cattiz.github.io/html-demo/uppgift5.html" target="_blank"> exercise 5 -</a></li>
+      <li><a href="https://cattiz.github.io/html-demo/uppgift6.html" target="_blank"> exercise 6</a></li>
     </ol>
-    </div>
+	</div>
+    
+    
+   <div id="footer">
+        <a href="https://github.com/Cattiz/" target="_blank"><img src="https://cattiz.github.io/html-demo/github.png" style="width:30px; margin-left:150px; position: fixed"></a>
+        <a href="https://www.linkedin.com/in/catherine-johansson-2b04a7b9/" target="_blank"><img src="https://cattiz.github.io/html-demo/linkedin.png" style="width:30px; margin-left:188px; position: fixed"></a>
+   </div>
     
 </body>
 </html>
